@@ -1,0 +1,40 @@
+.page-wrapper {
+    margin-top: 100px;
+    padding: 30px 120px;
+}
+
+.page-wrapper button {
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100% !important;
+    margin: 0px !important;
+    border-top: 2px solid #dee2e6;	
+}
+
+.dataTables_filter {
+    margin-bottom: 5px;
+}
+
+.edit-button {
+    font-size: 15px; 
+    float: right;
+}
+
+.delete-button {
+    margin-right: 39.9% !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+#login-form {
+    margin: 100px auto;
+    margin-top: 200px;
+    padding: 50px;
+    width: 50%;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+}
