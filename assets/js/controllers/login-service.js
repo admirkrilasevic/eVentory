@@ -28,4 +28,16 @@ var LoginService = {
     localStorage.clear();
     window.location.replace("login.html");
   },
+
+  checkLoginStatus: function(token){
+    var token = localStorage.getItem("user_token");
+    if (token) {
+        var user = Utils.parseJwt(token);
+        if (user.is_admin) {
+            $("#users-link").removeClass("hide");
+        }
+    } else {
+        window.location.href = "login.html";
+    }
+  }
 };
