@@ -94,7 +94,7 @@ var Users = {
       },
       submitHandler: function(form, event) {
         event.preventDefault();
-        var data = Object.fromEntries(new FormData(form).entries());
+        var data = Utils.form2json(form);
         if (data.id){
           Users.updateUser(data);
         } else {

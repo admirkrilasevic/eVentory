@@ -7,7 +7,7 @@ var LoginService = {
     $("#login-form").validate({
       submitHandler: function (form, event) {
         event.preventDefault();
-        var entity = Object.fromEntries(new FormData(form).entries());
+        var entity = Utils.form2json(form);
         LoginService.login(entity);
       },
     });
