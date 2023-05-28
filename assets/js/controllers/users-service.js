@@ -12,6 +12,11 @@ var Users = {
       ajax: {
         url: "rest/api/users",
         type: "GET",
+        beforeSend: function(xhr){
+          if (localStorage.getItem("user_token")){
+            xhr.setRequestHeader('Authorization', localStorage.getItem("user_token"));
+          }
+        },
         dataSrc: function(resp){
           return resp;
         },
